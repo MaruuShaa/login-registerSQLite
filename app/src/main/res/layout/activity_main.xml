@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/zeemarsha"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/profil"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        app:layout_constraintTop_toBottomOf="@id/thumbnail"
+        app:layout_constraintBottom_toBottomOf="@id/thumbnail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30px"
+        android:layout_marginTop="20px"
+        android:src="@drawable/siganteng"
+        android:background="@drawable/circle_shape"
+        android:clipToOutline="true"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maru App"
+        app:layout_constraintStart_toEndOf="@id/profil"
+        app:layout_constraintTop_toBottomOf="@id/thumbnail"
+        android:layout_marginStart="10px"
+        android:textColor="#15719B"/>
+    <TextView
+        android:id="@+id/name"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bunga Azzahra"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+    <Button
+        android:id="@+id/btn_keluar"
+        app:layout_constraintTop_toBottomOf="@id/thumbnail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5px"
+        android:text="Keluar"/>
+    <HorizontalScrollView
+        android:id="@+id/ic_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintTop_toBottomOf="@id/profil"
+        app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic1"
+                android:contentDescription="Image 1"
+                android:padding="8dp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic2"
+                android:contentDescription="Image 2"
+                android:padding="8dp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic3"
+                android:contentDescription="Image 3"
+                android:padding="8dp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic4"
+                android:contentDescription="Image 3"
+                android:padding="8dp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic5"
+                android:contentDescription="Image 3"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/deskripsi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ic_layout"
+        app:layout_constraintEnd_toStartOf="@id/ic_layout"
+        app:layout_constraintBottom_toBottomOf="@id/ic_layout"
+        android:padding="10dp"
+        android:text="Pelajar di kelas XII RPL 1 dan yap saya siswa biasa :)"/>
+
+    <TextView
+        android:id="@+id/text_target"
+        android:layout_marginTop="10px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ic_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Target Project Untuk Tahun Ini"
+        android:layout_marginStart="10px"
+        android:textColor="#4287f5"
+        android:textSize="16sp"/>
+    <ScrollView
+        android:id="@+id/target_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/text_target"
+        app:layout_constraintBottom_toTopOf="@id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="5dp">
+
+        <!-- LinearLayout untuk konten scroll -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="4px">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic1"
+                    android:contentDescription="Image 1"
+                    android:padding="8dp"
+                    />
+                <TextView
+                    android:layout_marginStart="10px"
+                    android:layout_width="500px"
+                    android:layout_height="match_parent"
+                    android:text="Belajar supaya bisa keliling dunia terutama korea biar bisa bertemu Lee Juyeon"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="4px">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic2"
+                    android:contentDescription="Image 1"
+                    android:padding="8dp"
+                    />
+                <TextView
+                    android:layout_marginStart="10px"
+                    android:layout_width="500px"
+                    android:layout_height="match_parent"
+
+                    android:text="Persiapan untuk keliling dunia"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="4px">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic4"
+                    android:contentDescription="Image 1"
+                    android:padding="8dp"
+                    />
+                <TextView
+                    android:layout_marginStart="10px"
+                    android:layout_width="500px"
+                    android:layout_height="match_parent"
+                    android:text="Punya kartu bca prioritas dan saldo nya 10M."/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="4px">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic2"
+                    android:contentDescription="Image 1"
+                    android:padding="8dp"
+                    />
+                <TextView
+                    android:layout_marginStart="10px"
+                    android:layout_width="500px"
+                    android:layout_height="match_parent"
+                    android:text="Punya koper banyak biar gak repot packing."/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="4px">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic5"
+                    android:contentDescription="Image 1"
+                    android:padding="8dp"
+                    />
+                <TextView
+                    android:layout_marginStart="10px"
+                    android:layout_width="500px"
+                    android:layout_height="match_parent"
+                    android:text="Pergi ke Capadocia."/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/footer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAlignment="center"
+        android:paddingHorizontal="100px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pemograman Perangkat Bergerak - SMKN 24 Jakarta"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/btn_kalku"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="96dp"
+        android:text="Kalkulator"
+        app:layout_constraintBottom_toBottomOf="@id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/thumbnail"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
