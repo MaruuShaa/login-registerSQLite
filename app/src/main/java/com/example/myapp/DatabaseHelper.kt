@@ -50,4 +50,6 @@ class DatabaseHelper(private val context: Context):
         cursor.close()
         return userExists
     }
+
+
 }

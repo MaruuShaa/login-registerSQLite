@@ -40,7 +40,7 @@
         android:textColor="#15719B"/>
     <TextView
         android:id="@+id/name"
-        android:textSize="17sp"
+        android:textSize="15sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bunga Azzahra"
@@ -103,16 +103,16 @@
         </LinearLayout>
 
     </HorizontalScrollView>
-    <TextView
-        android:id="@+id/deskripsi"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/ic_layout"
-        app:layout_constraintEnd_toStartOf="@id/ic_layout"
-        app:layout_constraintBottom_toBottomOf="@id/ic_layout"
-        android:padding="10dp"
-        android:text="Pelajar di kelas XII RPL 1 dan yap saya siswa biasa :)"/>
+<!--    <TextView-->
+<!--        android:id="@+id/deskripsi"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/ic_layout"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/ic_layout"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/ic_layout"-->
+<!--        android:padding="10dp"-->
+<!--        android:text="Pelajar di kelas XII RPL 1 dan yap saya siswa biasa :)"/>-->
 
     <TextView
         android:id="@+id/text_target"
@@ -251,12 +251,23 @@
         android:id="@+id/btn_kalku"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginEnd="100dp"
         android:text="Kalkulator"
         app:layout_constraintBottom_toBottomOf="@id/name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/thumbnail"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Notes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ic_layout"
+        app:layout_constraintEnd_toStartOf="@id/ic_layout"
+        app:layout_constraintBottom_toBottomOf="@id/ic_layout"
+        android:padding="10dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -32,5 +32,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val note = findViewById<Button>(R.id.btn_note)
+
+        note.setOnClickListener {
+            val intent = Intent(this,NoteActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
